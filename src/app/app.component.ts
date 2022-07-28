@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core'
+import { PruebaService } from './services/prueba.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'FlinkUI';
+
+
+  //instanciar el service para usar en el oninit
+  constructor(private pruebaservice: PruebaService) {
+
+  }
+  ngOnInit(): void {
+      this.pruebaservice.getPrueba()
+      .subscribe(data=> {
+        console.log(data);
+      });
+
+  }
 }
