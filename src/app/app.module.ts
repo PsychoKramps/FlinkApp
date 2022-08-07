@@ -4,10 +4,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/shared/home/home.component';
-import { ScriptsJsService } from './services/scripts-js.service';
+import { ScriptsJsService } from './components/services/scripts-js.service';
 import { ExploredComponent } from './components/shared/explored/explored.component';
 import { PerfilComponent } from './components/shared/perfil/perfil.component';
 import { CreateCursoComponent } from './components/shared/create-curso/create-curso.component';
+import { HeaderRoutingComponent } from './components/shared/header-routing/header-routing.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { CreateCursoComponent } from './components/shared/create-curso/create-cu
     HomeComponent,
     ExploredComponent,
     PerfilComponent,
-    CreateCursoComponent
+    CreateCursoComponent,
+    HeaderRoutingComponent
   ],
   imports: [
     BrowserModule,

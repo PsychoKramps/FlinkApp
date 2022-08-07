@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ScriptsJsService } from 'src/app/services/scripts-js.service';
+import { ScriptsJsService } from 'src/app/components/services/scripts-js.service';
 
 @Component({
   selector: 'app-perfil',
