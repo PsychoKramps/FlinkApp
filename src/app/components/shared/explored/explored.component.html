@@ -122,21 +122,21 @@
           </div>
         </form>
       </div>
-      <div class="col-lg-3" *ngFor="let curso of recentCursos; let pos = index">
-        <div class="item" >
+      <div class="col-lg-3" *ngFor="let curso of recentCursos; let pos=index">
+        <div class="item">
           <div class="row">
             <div class="col-lg-12">
               <span class="author">
                 <img src="assets/images/author.jpg" alt="" style="max-width: 50px; max-height: 50px; border-radius: 50%;">
               </span>
-              <iframe width="560" height="315" [src]="curso.urlCurso" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              <h4>{{curso.nombreCurso}}</h4>
+              <img [src]="curso.portada" alt="{{curso.nombreCurso}}" style="border-radius: 20px;">
+              <h4>Genesis Meta Boom</h4>
             </div>
             <div class="col-lg-12">
               <div class="line-dec"></div>
               <div class="row">
                 <div class="col-6">
-                  <span>duracion<br> <strong>{{curso.duracion}}</strong></span>
+                  <span>Duracion: <br> <strong>{{curso.duracion}}Hrs</strong></span>
                 </div>
                 <div class="col-6">
                   <span>Ends In: <br> <strong>26th Nov</strong></span>
