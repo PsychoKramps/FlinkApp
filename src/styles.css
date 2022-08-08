@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'assets/css/fontawesome.css';
+@import 'assets/css/templatemo-liberty-market.css';
+@import 'assets/css/owl.css';
+@import 'assets/css/animate.css';
+@import 'https://unpkg.com/swiper@7/swiper-bundle.min.css';
+
+/* <link rel="stylesheet" href="assets/css/fontawesome.css">
+<link rel="stylesheet" href="assets/css/templatemo-liberty-market.css">
+<link rel="stylesheet" href="assets/css/owl.css">
+<link rel="stylesheet" href="assets/css/animate.css">
+<link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/> */

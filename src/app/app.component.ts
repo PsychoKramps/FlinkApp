@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core'
-import { PruebaService } from './services/prueba.service';
+import { PruebaService } from './components/services/prueba.service';
 
 @Component({
   selector: 'app-root',
