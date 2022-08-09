@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { LoginComponent } from './components/modules/usuario/login/login.component';
+import { RegisterComponent } from './components/modules/usuario/register/register.component';
 import { CreateCursoComponent } from './components/shared/create-curso/create-curso.component';
 import { ExploredComponent } from './components/shared/explored/explored.component';
 import { HomeComponent } from './components/shared/home/home.component';
@@ -19,12 +21,20 @@ const routes: Routes = [
     component: PerfilComponent
   },
   {
+    path:"register",
+    component: RegisterComponent
+  },
+  {
+    path:"Login",
+    component: LoginComponent
+  },
+  {
     path:"crearCurso",
     component: CreateCursoComponent
   },
   {
     path:'**',
-    redirectTo: '/home', 
+    redirectTo: '/home',
     pathMatch: 'full'
   }
 ];

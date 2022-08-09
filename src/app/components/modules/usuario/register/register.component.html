@@ -1,0 +1,154 @@
+
+<div class="item-details-page">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="section-heading">
+          <div class="line-dec"></div>
+          <h2>Crea tu cuenta <em>FLINK</em> aqui.</h2>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="register">
+          <div class="section-heading">
+            <div class="line-dec"></div>
+            <h2><em>Registrarse</em></h2>
+          </div>
+          {{ frmSalas.value | json }}
+          <form id="contact" (ngSubmit)="onSubmit(frmSalas.value)" #frmSalas="ngForm">
+            <div class="row">
+              <div class="col-lg-4">
+                <fieldset>
+                  <label for="nombre_1">Primer nombre</label>
+                  <input
+                    type="text"
+                    name="primer nombre"
+                    id="nombre_1"
+                    placeholder="Digite su primer nombre"
+                    autocomplete="on"
+                    required
+
+                  />
+                </fieldset>
+              </div>
+              <div class="col-lg-4">
+                <fieldset>
+                  <label for="nombre_2">Segundo nombre</label>
+                  <input
+                    type="text"
+                    name="Segundo nombre"
+                    id="nombre_2"
+                    placeholder="Digite segundo nombre (Opcional)"
+                    autocomplete="on"
+
+                  />
+                </fieldset>
+              </div>
+              <div class="col-lg-6">
+                <fieldset>
+                  <label for="apellido_1">Primer apellido</label>
+                  <input
+                    type="text"
+                    name="primer apellido"
+                    id="apellido_1"
+                    placeholder="Digite primero apellido"
+                    autocomplete="on"
+
+                  />
+                </fieldset>
+              </div>
+              <div class="col-lg-4">
+                <fieldset>
+                  <label for="apellido_2">Segundo apellido</label>
+                  <input
+                    type="text"
+                    name="Segundo apellido"
+                    id="apellido_2"
+                    placeholder="Digite segundo apellido (Opcional)"
+                    autocomplete="on"
+
+                  />
+                </fieldset>
+              </div>
+              <div class="col-lg-6">
+                <fieldset>
+                  <label for="email">Email</label>
+                  <input
+                    type="text"
+                    name="email"
+                    id="correo"
+                    placeholder="Ejemplo@gmail.com"
+                    autocomplete="on"
+                    required
+
+                  />
+                </fieldset>
+              </div>
+              <div class="col-lg-6">
+                <fieldset>
+                  <label for="nombreUsuario">Your Username</label>
+                  <input
+                    type="text"
+                    name="nombreUsuario"
+                    id="nombreUsuario"
+                    placeholder="Digite su nombre de nombre de usuario"
+                    autocomplete="on"
+                    required
+
+                  />
+                </fieldset>
+              </div>
+              <div class="col-lg-6">
+                <fieldset>
+                  <label for="Contrasena">Contraseña</label>
+                  <input
+                    type="password"
+                    name="contrasena"
+                    id="password"
+                    placeholder="Digite su Contraseña"
+                    autocomplete="on"
+                    required
+
+                  />
+                </fieldset>
+              </div>
+              <div class="col-lg-8">
+                <fieldset>
+                  <button type="submit" id="form-submit" class="orange-button">
+                    Enviar
+                  </button>
+                </fieldset>
+                <a routerLink="/Login">Tengo cuenta</a>
+              </div>
+            </div>
+          </form>
+        </div>
+
+      </div>
+      <div class="col-lg-12">
+      </div>
+      <div class="col-lg-7"></div>
+      <div class="col-lg-5 align-self-center">
+        <div class="row">
+          <div class="col-3"></div>
+          <div class="col-4"></div>
+          <div class="col-5"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <p>Copyright © 2022 <a href="#">Colombia</a> Fundación FLINK Co., Ltd. All rights reserved.
+        &nbsp;&nbsp;
+        Designed by <a title="HTML CSS Templates" rel="sponsored"  target="_blank">Flink</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<router-outlet></router-outlet>
