@@ -13,7 +13,7 @@ export class ExploredComponent implements OnInit {
   recentCursos: ResentCursos[] = [];
 
   constructor( private _cargarScript:ScriptsJsService, private cursosServices: CursosService) {
-    _cargarScript.scripts(['isotope', 'owl-carousel', 'wow', 'tabs', 'popup', 'custom']);
+    _cargarScript.scripts(['isotope', 'owl-carousel', 'tabs', 'popup', 'custom']);
 
     this.cursosServices.getResentCursos()
     .subscribe(cursos => {
