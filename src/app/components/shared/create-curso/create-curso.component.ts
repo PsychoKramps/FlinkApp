@@ -9,7 +9,7 @@ import { ScriptsJsService } from 'src/app/components/services/scripts-js.service
 export class CreateCursoComponent implements OnInit {
 
   constructor( private _cargarScript:ScriptsJsService) {
-    _cargarScript.scripts(['isotope', 'owl-carousel', 'wow', 'tabs', 'popup', 'custom']);
+    _cargarScript.scripts(['isotope', 'owl-carousel', 'tabs', 'popup', 'custom']);
   }
 
   ngOnInit(): void {

@@ -25,7 +25,8 @@ export class CursosService {
               duracion: curso.duracion,
               descripcion: curso.descripcion,
               tipoCurso: curso.tipoCurso,
-              categoria: curso.categoria
+              categoria: curso.categoria,
+              portada: curso.portada
             };
             cursos.push(recentCurso);
           };

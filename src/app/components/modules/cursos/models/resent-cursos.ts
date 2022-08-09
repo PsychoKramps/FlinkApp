@@ -6,5 +6,6 @@ export interface ResentCursos {
     duracion: string,
     descripcion: string,
     tipoCurso: string,
-    categoria: string
+    categoria: string,
+    portada: string
 }
