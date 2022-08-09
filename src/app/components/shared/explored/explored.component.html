@@ -93,27 +93,6 @@
                   <input type="text" name="keyword" class="searchText" placeholder="Type Something..." autocomplete="on" required>
               </fieldset>
             </div>
-            <div class="col-lg-3">
-              <fieldset>
-                  <select name="Category" class="form-select" aria-label="Default select example" id="chooseCategory" onchange="this.form.click()">
-                      <option selected>All Categories</option>
-                      <option type="checkbox" name="option1" value="Music">Music</option>
-                      <option value="Digital">Digital</option>
-                      <option value="Blockchain">Blockchain</option>
-                      <option value="Virtual">Virtual</option>
-                  </select>
-              </fieldset>
-            </div>
-            <div class="col-lg-3">
-              <fieldset>
-                  <select name="Price" class="form-select" aria-label="Default select example" id="chooseCategory" onchange="this.form.click()">
-                      <option selected>Available</option>
-                      <option value="Ending-Soon">Ending Soon</option>
-                      <option value="Coming-Soon">Coming Soon</option>
-                      <option value="Closed">Closed</option>
-                  </select>
-              </fieldset>
-            </div>
             <div class="col-lg-2">
               <fieldset>
                   <button class="main-button">Search</button>
@@ -129,17 +108,17 @@
               <span class="author">
                 <img src="assets/images/author.jpg" alt="" style="max-width: 50px; max-height: 50px; border-radius: 50%;">
               </span>
-              <img [src]="curso.portada" alt="{{curso.nombreCurso}}" style="border-radius: 20px;">
+              <img [src]="curso.portada" alt="{{curso.nombreCurso}}" style="border-radius: 20px; max-width:100%; height: 20vh;">
               <h4>{{curso.nombreCurso}}</h4>
             </div>
             <div class="col-lg-12">
               <div class="line-dec"></div>
               <div class="row">
                 <div class="col-6">
-                  <span>Duracion: <br> <strong>{{curso.duracion}}Hrs</strong></span>
+                  <span>Duracion: <br> <strong style="font-size: 1.2em;">{{curso.duracion}}Hrs</strong></span>
                 </div>
                 <div class="col-6">
-                  <span>Fecha: <br> <strong>{{curso.fecha}}</strong></span>
+                  <span>Fecha: <br> <strong style="font-size: 1.2em;">{{curso.fecha | date:'MMM d, y' }}</strong></span>
                 </div>
               </div>
             </div>

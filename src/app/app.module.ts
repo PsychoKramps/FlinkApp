@@ -9,6 +9,7 @@ import { ExploredComponent } from './components/shared/explored/explored.compone
 import { PerfilComponent } from './components/shared/perfil/perfil.component';
 import { CreateCursoComponent } from './components/shared/create-curso/create-curso.component';
 import { HeaderRoutingComponent } from './components/shared/header-routing/header-routing.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,12 +18,13 @@ import { HeaderRoutingComponent } from './components/shared/header-routing/heade
     ExploredComponent,
     PerfilComponent,
     CreateCursoComponent,
-    HeaderRoutingComponent
+    HeaderRoutingComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [
     ScriptsJsService,

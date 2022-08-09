@@ -1437,7 +1437,7 @@ Explore Style
 }
 
 .discover-items #search-form input,
-.discover-items #search-form select {
+.discover-items #search-form select{
   width: 100%;
   height: 46px;
   outline: none;
@@ -1462,7 +1462,7 @@ Explore Style
   color: #fff;
 }
 
-.discover-items #search-form button {
+.discover-items #search-form button{
   font-size: 14px;
   color: #fff;
   background-color: #7453fc;

@@ -35,4 +35,9 @@ export class CursosService {
       )
       return response;
   };
+
+  createCurso(cursos:ResentCursos): Observable<any>{
+    let response = this.httpClient.post('https://localhost:7238/api/Curso', cursos);
+    return response;
+  }
 }
