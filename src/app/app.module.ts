@@ -10,6 +10,7 @@ import { PerfilComponent } from './components/shared/perfil/perfil.component';
 import { CreateCursoComponent } from './components/shared/create-curso/create-curso.component';
 import { HeaderRoutingComponent } from './components/shared/header-routing/header-routing.component';
 import { FormsModule } from '@angular/forms';
+import { ViewVideoComponent } from './components/shared/view-video/view-video.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { FormsModule } from '@angular/forms';
     PerfilComponent,
     CreateCursoComponent,
     HeaderRoutingComponent,
+    ViewVideoComponent,
   ],
   imports: [
     BrowserModule,

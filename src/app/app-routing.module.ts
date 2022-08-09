@@ -4,6 +4,7 @@ import { CreateCursoComponent } from './components/shared/create-curso/create-cu
 import { ExploredComponent } from './components/shared/explored/explored.component';
 import { HomeComponent } from './components/shared/home/home.component';
 import { PerfilComponent } from './components/shared/perfil/perfil.component';
+import { ViewVideoComponent } from './components/shared/view-video/view-video.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path:"crearCurso",
     component: CreateCursoComponent
+  },
+  {
+    path:"video",
+    component: ViewVideoComponent
   },
   {
     path:'**',
