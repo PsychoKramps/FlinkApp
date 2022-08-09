@@ -1,0 +1,58 @@
+<h1>Administración Salas</h1>
+<hr>
+{{ frmSalas.value | json }}
+<div class="row">
+  <div class="col-6">
+    <form (ngSubmit)="onSubmit(frmSalas.value)" #frmSalas="ngForm">
+      <div class="mb-3">
+        <label for="nomenclatura" class="form-label">Nomenclatura</label>
+        <input type="text"
+          class="form-control"
+          id="nomenclatura"
+          name="nomenclatura"
+          placeholder="Ingrese la nomenclatura de la sala" ngModel>
+      </div>
+      <div class="mb-3">
+        <label for="capacidad" class="form-label">Capacidad</label>
+        <input type="number"
+          class="form-control"
+          id="capacidad"
+          name="capacidad"
+          placeholder="Ingrese la capacidad máxima de la sala" ngModel>
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="esDinamix" name="esDinamix" ngModel>
+        <label class="form-check-label" for="esDinamix">Es Dinamix?</label>
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="activa" name="activa" ngModel>
+        <label class="form-check-label" for="activa">Activa?</label>
+      </div>
+      <button type="submit" class="btn btn-outline-primary">Guardar</button>
+    </form>
+  </div>
+  <div class="col-6">
+    <h3>Listado</h3>
+    <hr>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nomenclatura</th>
+          <th scope="col">Cap.</th>
+          <th scope="col">Dinamix</th>
+          <th scope="col">Activa</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let sala of salas">
+          <th scope="row">{{sala.idSala}}</th>
+          <td>{{sala.nomenclatura}}</td>
+          <td>{{sala.capacidad}}</td>
+          <td>{{sala.esDinamix ? "Si": "No" }}</td>
+          <td>{{sala.activa ? "Si" : "No"}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
