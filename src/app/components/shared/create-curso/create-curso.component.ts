@@ -14,6 +14,8 @@ export class CreateCursoComponent implements OnInit {
   listaTipo: string[] = ['TI', 'Idiomas', 'Arte', 'Diseño'];
   listaCategoria: string[] = ['Programación', 'Ingles', 'Musica', 'Diseño grafico'];
 
+  fileToUpload: File | null = null;
+
   constructor( private _cargarScript:ScriptsJsService, private cursosServices: CursosService) {
     _cargarScript.scripts(['isotope', 'owl-carousel', 'tabs', 'popup', 'custom']);
   }
