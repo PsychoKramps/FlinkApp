@@ -11,6 +11,8 @@ import { CreateCursoComponent } from './components/shared/create-curso/create-cu
 import { HeaderRoutingComponent } from './components/shared/header-routing/header-routing.component';
 import { FormsModule } from '@angular/forms';
 import { ViewVideoComponent } from './components/shared/view-video/view-video.component';
+import { LoginComponent } from './components/modules/usuario/login/login.component';
+import { RegisterComponent } from './components/modules/usuario/register/register.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import { ViewVideoComponent } from './components/shared/view-video/view-video.co
     PerfilComponent,
     CreateCursoComponent,
     HeaderRoutingComponent,
+    LoginComponent,
+    RegisterComponent,
     ViewVideoComponent,
   ],
   imports: [
